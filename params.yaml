@@ -1,0 +1,8 @@
+raw_data_config:
+  raw_data: data/raw/time_series_data.csv
+
+darts_config:
+  features:['t','ProductP1']
+  train_test_split: 0.8
+
+model_dir: models/model.joblib
