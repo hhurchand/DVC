@@ -1,0 +1,6 @@
+stages:
+  load_config:
+    cmd: python src/data_loader.py
+    deps:
+      - params.yaml
+
