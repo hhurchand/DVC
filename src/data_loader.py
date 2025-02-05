@@ -1,4 +1,4 @@
-from utils.constants import get_config
+from constants.constants import get_config
 from pathlib import Path
 import pandas as pd
 from typing import List

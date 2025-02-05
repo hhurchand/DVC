@@ -1,8 +1,9 @@
 import argparse
+from constants import CONFIG
 import yaml
 from typing import Any, Dict
 
-def get_config(config_path: str = "params.yaml")-> Dict[str, Any]:
+def get_config(config_path: str = CONFIG)-> Dict[str, Any]:
     """Reads the YAML configuration file and returns the project parameters
 
     Args:
@@ -21,7 +22,7 @@ def get_config(config_path: str = "params.yaml")-> Dict[str, Any]:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Load configuration from YAML file")
-    parser.add_argument("--config",default="params.yaml", help="Path to YAML configuration file")
+    parser.add_argument("--config",default=CONFIG, help="Path to YAML configuration file")
     args = parser.parse_args()
 
     config = get_config(args.config)

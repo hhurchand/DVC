@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  load_config:
+    cmd: python src/data_loader.py
+    deps:
+    - path: params.yaml
+      hash: md5
+      md5: 6756cf93bfa28e38916c205469a89a07
+      size: 198

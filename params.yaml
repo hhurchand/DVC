@@ -1,6 +1,6 @@
 raw_data_config:
   raw_data: data/raw/time_series_data.csv
-  columns: ['t','ProductP1']
+  columns: ['t','ProductP2']
 
 darts_config:
   features: ['t','ProductP1']
