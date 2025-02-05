@@ -5,5 +5,10 @@ stages:
     deps:
     - path: params.yaml
       hash: md5
-      md5: 6756cf93bfa28e38916c205469a89a07
-      size: 198
+      md5: 34791eacf864ae659cd88c2ca1fcce4e
+      size: 194
+    outs:
+    - path: data/processed/input_data.csv
+      hash: md5
+      md5: 6ba70da65ca7f88a5163bce5ad15faaf
+      size: 778

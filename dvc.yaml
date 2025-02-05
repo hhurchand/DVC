@@ -3,4 +3,6 @@ stages:
     cmd: python src/data_loader.py
     deps:
       - params.yaml
+    outs:
+      - data/processed/input_data.csv
 

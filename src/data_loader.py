@@ -15,7 +15,8 @@ class DataLoader:
 if __name__ == "__main__":
 
     config = get_config()
-    path = Path(config["raw_data_config"]["raw_data"])
+    raw_path = Path(config["raw_data_config"]["raw_data"])
     columns = config["raw_data_config"]["columns"]
-    df = DataLoader().get_raw_data(path=path,columns=columns)
-    print(df)
+    df = DataLoader().get_raw_data(path=raw_path,columns=columns)
+    output_path = Path(config["input_data_config"]["input_data"])
+    df.to_csv(output_path,index=False)
